@@ -1,14 +1,16 @@
 public class Pessoa {
-    int codigo, cep;
-    String nome, endereco, bairro, telefone;
+    protected int codigo, cep;
+    protected String nome, endereco, bairro, telefone, nascimento, email;
 
-    public Pessoa(int codigo, int cep, String nome, String endereco, String bairro, String telefone){
+    public Pessoa(int codigo, int cep, String nome, String endereco, String bairro, String telefone, String nascimento, String email){
         this.codigo = codigo;
         this.cep = cep;
         this.nome = nome;
         this.endereco = endereco;
         this.bairro = bairro;
         this.telefone = telefone;
+        this.nascimento = nascimento;
+        this.email = email;
     }
 
     public int getCodigo() {
@@ -57,5 +59,21 @@ public class Pessoa {
 
     public void setTelefone(String telefone) {
         this.telefone = telefone;
+    }
+
+    public String getNascimento() {
+        return nascimento;
+    }
+
+    public void setNascimento(String nascimento) {
+        this.nascimento = nascimento;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
