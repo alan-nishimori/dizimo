@@ -15,4 +15,10 @@ public class Usuario extends Pessoa {
         this.senha = senha;
     }
 
+    public boolean verifica(String login, String senha){
+        if((login.compareTo(this.login) == 0) && (senha.compareTo(this.senha) == 0))
+            return true;
+        return false;
+    }
+
 }
