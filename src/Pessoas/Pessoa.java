@@ -1,6 +1,14 @@
+package Pessoas;
+
 public class Pessoa {
-    protected int codigo, cep;
-    protected String nome, endereco, bairro, telefone, nascimento, email;
+    protected int codigo;
+    protected String cep;
+    protected String nome;
+    protected String endereco;
+    protected String bairro;
+    protected String telefone;
+    protected String nascimento;
+    protected String email;
 
     public Pessoa(int codigo, int cep, String nome, String endereco, String bairro, String telefone, String nascimento, String email){
         this.codigo = codigo;
@@ -17,15 +25,11 @@ public class Pessoa {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
-        this.codigo = codigo;
-    }
-
-    public int getCep() {
+    public String getCep() {
         return cep;
     }
 
-    public void setCep(int cep) {
+    public void setCep(String cep) {
         this.cep = cep;
     }
 
